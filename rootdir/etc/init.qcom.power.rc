@@ -47,6 +47,11 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq 1113600
 
+    # Configure default schedTune value for foreground/top-app
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
     # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/governor "bw_hwmon"
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/polling_interval 5
