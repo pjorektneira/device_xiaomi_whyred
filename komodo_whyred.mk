@@ -28,7 +28,7 @@ $(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
+$(call inherit-product, vendor/MiuiCamera/config.mk)
 $(call inherit-product-if-exists, external/motorola/faceunlock/config.mk)
 
 PRODUCT_BRAND := Xiaomi
@@ -47,10 +47,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200805.001 6578210 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RP1A.201005.004 6782484 release-keys"
 
 #Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
