@@ -19,7 +19,7 @@
   },
   {
     "remote": "github",
-    "repository": "Reinazhard/android_hardware_qcom_display",
+    "repository": "pjorektneira/hardware_qcom_display",
     "target_path": "hardware/qcom-caf/msm8998-r/display",
     "branch": "11-msm8998"
   },
