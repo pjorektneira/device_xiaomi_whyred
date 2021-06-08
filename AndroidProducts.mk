@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_whyred.mk
+    $(LOCAL_DIR)/p404_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_whyred-user \
-    revengeos_whyred-userdebug \
-    revengeos_whyred-eng
+    p404_whyred-user \
+    p404_whyred-userdebug \
+    p404_whyred-eng

@@ -20,7 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/404/configs/common.mk)
+$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -35,7 +37,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := revengeos_whyred
+PRODUCT_NAME := p404_whyred
 PRODUCT_MODEL := Redmi Note 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
