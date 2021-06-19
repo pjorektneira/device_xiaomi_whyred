@@ -459,7 +459,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi_whyred
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
+    $(DEVICE_PATH)/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
 
 # Wifi
 PRODUCT_PACKAGES += \
