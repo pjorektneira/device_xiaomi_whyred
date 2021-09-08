@@ -25,6 +25,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
