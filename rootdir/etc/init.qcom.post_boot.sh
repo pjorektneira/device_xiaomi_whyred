@@ -31,15 +31,22 @@ function sdm660_sched_schedutil_dcvs() {
 
         # configure governor settings for little cluster
         echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+        echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+        echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
         echo 633600 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 
         # configure governor settings for big cluster
         echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
+        echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+        echo 20000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
         echo 1113600 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+
+        # Setup runtime cpusets
+        echo "0-7" > /dev/cpuset/top-app/cpus
+        echo "0-3,5-6" > /dev/cpuset/foreground/cpus
+        echo "0-1" > /dev/cpuset/background/cpus
+        echo "0-3" > /dev/cpuset/system-background/cpus
+        echo "0-3" > /dev/cpuset/restricted/cpus
 
         echo "0:1401600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
         echo 40 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
