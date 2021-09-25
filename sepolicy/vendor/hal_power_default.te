@@ -13,7 +13,7 @@ set_prop(hal_power_default, vendor_power_prop)
 allow hal_power_default cgroup:dir search;
 allow hal_power_default cgroup:file rw_file_perms;
 allow hal_power_default proc_sched_energy_aware:file rw_file_perms;
-allow hal_power_default latency_device:chr_file rw_file_perms;
+allow hal_power_default device_latency:chr_file rw_file_perms;
 
 allow hal_power_default sysfs:file { read open getattr };
 

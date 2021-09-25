@@ -5,4 +5,3 @@ type sysfs_touchpanel, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
 
 type proc_sched_energy_aware, proc_type, fs_type;
-type vendor_power_prop, property_type;
