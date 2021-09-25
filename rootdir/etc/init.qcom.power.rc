@@ -94,14 +94,14 @@ on enable-low-power
 
     setprop vendor.dcvs.prop 1
 
-    # Post-setup services
-    setprop vendor.post_boot.parsed 1
-
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
+
+    # Post-setup services
+    setprop vendor.post_boot.parsed 1
 
 on property:sys.boot_completed=1
     trigger enable-low-power
