@@ -203,3 +203,7 @@ ro.vendor.sensors.dev_ori=true
 ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
+
+# Soc
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM660
