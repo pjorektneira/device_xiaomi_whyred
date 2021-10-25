@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_whyred.mk
+    $(LOCAL_DIR)/statix_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_whyred-user \
-    lineage_whyred-userdebug \
-    lineage_whyred-eng
+    statix_whyred-user \
+    statix_whyred-userdebug \
+    statix_whyred-eng
