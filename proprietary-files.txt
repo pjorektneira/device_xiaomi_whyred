@@ -1053,13 +1053,6 @@ vendor/lib/libOmxVideoDSMode.so|84c632ef31c4dd88c5e08f92ba02e3f29df09b35
 vendor/lib/libOmxWmaDec.so|7fe5458ba5e19cd4c8422e910acbe6a6f6574c94
 vendor/lib64/libmmosal.so|595faff0767dc2bd0a344a98ab65a239bed14826
 
-# Perf configs - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/etc/perf/commonresourceconfigs.xml|b014d70d329a385091aacb6539b2fee1bd9b285d
-vendor/etc/perf/perfboostsconfig.xml|402a87eaefe640d72a74abfcddcf924d19810704
-vendor/etc/perf/perfconfigstore.xml|d2f3548925343eb5f5263ec8544e8931938d39ce
-vendor/etc/perf/targetconfig.xml|dbc6dc566f70b687fa3a740441aef7f0252b1128
-vendor/etc/perf/targetresourceconfigs.xml|17a860cb3d0f8e8a610f78da1cc9baed85bfa8ca
-
 # Peripheral - from ginkgo V12.5.1.0.RCOCNXM
 vendor/bin/pm-proxy|8e159d1fb25f5ee24cf94be8534b3bb8891831bc
 vendor/bin/pm-service|951e322c67132fe8826648e4fda9ddf5e4304e8a

@@ -18,11 +18,19 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 27
 
+TARGET_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm660
+OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/qcom-caf/sdm660/audio \
+    hardware/qcom-caf/sdm660/media \
+    hardware/qcom-caf/sdm660/display
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -297,7 +305,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Kernel Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/whyred-kernel/sdm660/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom-caf/sdm660/kernel-headers
 
 # Keylayout
 PRODUCT_COPY_FILES += \
