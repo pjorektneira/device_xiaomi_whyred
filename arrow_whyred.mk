@@ -14,6 +14,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit ArrowOS common makefile
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+ARROW_GAPPS := true
+
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
